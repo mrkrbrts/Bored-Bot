@@ -1,10 +1,9 @@
 body {
     margin: 0;
-    font-size: 1em;
     font-family: "Roboto Mono";
 
     background: rgb(0,79,179);
-    background: linear-gradient(28deg, rgba(0,79,179,1) 0%, rgba(0,0,255,1) 46%, rgba(0,110,133,1) 100%);
+    background: linear-gradient(28deg, rgba(0,79,179,0.6) 0%, rgba(234,234,253,1) 50%, rgba(0,110,133,0.6) 100%);
     background-repeat: no-repeat;
 
     height: 100vh;
@@ -17,8 +16,12 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;    
+}
+
+h4 {
+    font-size: 3rem;
 }
 
 
@@ -27,14 +30,27 @@ h1 {
 }
 
 #idea-btn {
-    height: 10vh;
-    width: 10vh;
+    height: 15vh;
+    width: 15vh;
     border-radius: 50%;
     border: 1px solid darkred;
+    background-color: darkred;
+    font-size: 2rem;
     cursor: pointer;
 }
 
-#idea-btn:hover,
 #idea-btn:focus {
-    background-color: #8b000032;
+    border: 5px solid rgba(218, 165, 32, 0.6);
+}
+
+#idea-btn:hover {
+    height: 16vh;
+    width: 16vh;
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+
+#idea-btn:active {
+    height: 15.5vh;
+    width: 15.5vh
 }
